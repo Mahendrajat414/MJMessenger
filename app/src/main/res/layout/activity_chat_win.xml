@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/chatbackfinal"
+    tools:context=".chatWin">
+
+    <LinearLayout
+        android:id="@+id/profiletop"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/common_google_signin_btn_text_light_default"
+        android:orientation="horizontal"
+        android:padding="4dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileimgg"
+            android:layout_width="49dp"
+            android:layout_height="49dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5.10dp"
+            android:src="@drawable/photocamera" />
+
+        <TextView
+            android:id="@+id/recivername"
+            android:layout_width="312dp"
+            android:layout_height="39dp"
+            android:layout_margin="16.10dp"
+            android:fontFamily="@font/apptext"
+            android:text="Tec Mahendra"
+            android:textColor="@color/white"
+            android:textSize="27.00dp" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/msgadpter"
+        android:layout_width="match_parent"
+        android:layout_height="606dp"
+        android:layout_above="@+id/messagelinearlayout"
+        android:layout_below="@+id/profiletop"
+        android:layout_marginBottom="-1dp"
+        android:padding="13.00dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/reciver_layout" />
+
+    <LinearLayout
+        android:id="@+id/messagelinearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="58.50dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="2.60dp"
+        android:layout_marginTop="2.60dp"
+        android:layout_marginBottom="2.60dp"
+        android:layout_marginEnd="2.60dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="45.50dp"
+            app:cardCornerRadius="32.50dp"
+            android:layout_marginStart="6.50dp"
+            android:layout_marginEnd="9.10dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="6.50dp"
+            android:layout_marginRight="9.10dp">
+
+            <EditText
+                android:id="@+id/textmsg"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="Type The Messages..."
+                android:paddingStart="13.00dp" />
+
+
+        </androidx.cardview.widget.CardView>
+        <ImageView
+            android:id="@+id/imagePicker"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="6.50dp"
+            android:layout_marginEnd="6.50dp"
+            android:src="@drawable/car_ui_icon_add"
+            android:layout_gravity="right"/>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/sendbtnn"
+            android:layout_width="45.50dp"
+            android:layout_height="45.50dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="32.50dp"
+            android:layout_marginStart="6.50dp"
+            android:layout_marginEnd="6.50dp">
+
+            <ImageView
+                android:layout_width="19.50dp"
+                android:layout_height="19.50dp"
+                android:layout_gravity="center"
+                android:background="@drawable/sendbut"/>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Add an ImageView for selecting and sending images -->
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "956961398989",
+    "firebase_url": "https://m-j-messenger-default-rtdb.firebaseio.com",
+    "project_id": "m-j-messenger",
+    "storage_bucket": "m-j-messenger.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:956961398989:android:910d1991f98dbe5a008984",
+        "android_client_info": {
+          "package_name": "com.example.mjmessenger"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAm-Rmp15-K90J9PwHGeJo6X8-vn9kDhBw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
